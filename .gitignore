@@ -112,3 +112,4 @@ dmypy.json
 # Config
 config.py
 /env
+/.vscode
