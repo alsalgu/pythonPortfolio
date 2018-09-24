@@ -80,6 +80,42 @@ html, body {
     height: 10px;
 }
 
+/* MS PAINT */
+
+.trm-btn2 {
+    width: 16px;
+    height: 16px;
+}
+
+.ms-btn {
+    width: 20px;
+    height: 20px;
+}
+
+.ms-right {
+    border-right: 2px solid darkslategray;
+}
+
+.ms-top {
+    border-top: 2px solid darkslategray;
+}
+
+.emboss {
+    background-color: grey;
+    border-bottom: 2px solid darkslategrey;
+    border-right: 2px solid darkslategrey;
+    border-left: 2px solid lightgrey;
+    border-top: 2px solid lightgrey;
+}
+
+.embossBlue {
+    background-color: blue;
+    border-bottom: 2px solid darkblue;
+    border-right: 2px solid darkblue;
+    border-left: 2px solid lightblue;
+    border-top: 2px solid lightblue;
+}
+
 /* XS to SM */
 
 @media (min-width: 0px) and (max-width: 660px) {

@@ -50,7 +50,8 @@
         </div>
     </div>
     <div id="websiteBody" class="bg-light flex-grow-1 d-flex flex-column align-items-center p-2">
-        <div id="terminal" class="container-fluid bg-dark rounded shadow pb-1 m-0">
+        <!-- Dev Terminal -->
+        <div id="terminalDev" class="container-fluid bg-dark rounded shadow pb-1 mb-1">
             <div id="terminalHeader" class="row no-gutters">
                 <div class="d-flex align-items-center">
                     <div class="trm-btn rounded-circle bg-success mr-1"></div>
@@ -69,17 +70,57 @@
                 </a>
                 <div id="backendCollapse" class="collapse">These are my skills.</div>
                 <a class="btn text-white mb-1 text-left" href="#frontendCollapse" data-toggle="collapse" aria-expanded="false"
-                aria-controls="frontendCollapse">
-                >>> print(front-end-skills)
+                    aria-controls="frontendCollapse">
+                    >>> print(front-end-skills)
                 </a>
                 <div id="frontendCollapse" class="collapse">These are my other skills.</div>
                 <a class="btn text-white mb-1 text-left" href="#devCollapse" data-toggle="collapse" aria-expanded="false"
-                aria-controls="devCollapse">
-                >>> print(dev-skills)
+                    aria-controls="devCollapse">
+                    >>> print(dev-skills)
                 </a>
                 <div id="devCollapse" class="collapse">These are my other, other skills.</div>
             </div>
         </div>
+        <!-- Art Terminal -->
+        <div id="MSPaint" class="container-fluid shadow emboss">
+            <div id="MSHeader" class="row">
+                <div class="embossBlue d-flex flex-fill m-1">
+                    <div class="d-flex flex-nowrap flex-fill ml-1">
+                        <span class="text-white d-none d-sm-block">artist.png - Paint</span>
+                        <span class="text-white d-sm-none">artist.png</span>
+                    </div>
+                    <div class="d-flex align-items-center mr-1">
+                        <div class="d-flex justify-content-center align-items-center trm-btn2 emboss mr-1 pb-1">
+                            <div class="font-weight-bold">_</div>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center trm-btn2 mr-1 emboss">
+                            <div>&#x25A1;</div>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center trm-btn2 emboss">
+                            <div class="font-weight-bold">x</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="MSmenu" class="row">
+                <div class="d-flex flex-fill ml-2 mr-2">
+                    <span class="text-black m-0">File</span>
+                </div>
+            </div>
+            <div id="MSview" class="row">
+                <div class="d-flex flex-fill ml-2 mr-2">
+                    <div class="d-inline-block ms-right pr-2">
+                        <div class="container">
+                            <div>x</div>
+                            <div>s</div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-fill bg-secondary ms-top">f</div>
+                </div>
+            </div>
+        </div>
+        <!-- TBD Terminal-->
     </div>
 </div>
 
