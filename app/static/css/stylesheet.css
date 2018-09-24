@@ -1,0 +1,42 @@
+html, body {
+    height: 100%
+}
+
+/* Additional Colors */
+.bg-black {
+    background-color: black;
+}
+
+/* Font Styles */
+
+.display-font {
+    font-family: 'VT323', monospace;
+    color: #03e603;
+}
+
+.title-font {
+    font-family: 'Audiowide', cursive;
+}
+
+/* Cursor ANimation */
+
+.cursorBlink {
+    -webkit-animation-name: blink; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: blink;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes blink {
+    from {background-color: #03e603;}
+    to {background-color: transparent;}
+}
+
+/* Standard */
+@keyframes blink {
+    from {background-color: #03e603;}
+    to {background-color: transparent;}
+}
