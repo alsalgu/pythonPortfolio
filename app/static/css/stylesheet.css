@@ -37,7 +37,7 @@ html, body {
 .cursorBlink {
     -webkit-animation-name: blink; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
-    -webkit-animation-iteration-count: 1s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
     animation-name: blink;
     animation-duration: 0.7s;
     animation-iteration-count: infinite;
@@ -45,14 +45,33 @@ html, body {
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes blink {
-    from {background-color: #03e603;}
-    to {background-color: transparent;}
+    from, to {border-right-color: lime}
+    50% {border-right-color: transparent}
 }
 
 /* Standard */
 @keyframes blink {
-    from {background-color: #03e603;}
-    to {background-color: transparent;}
+    from, to {border-right-color: lime}
+    50% {border-right-color: transparent}
+}
+
+/* Typing Animation */
+
+.typing {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right-width: .15em;
+    border-right-style: solid;
+    border-right-color: lime;
+    width: 5.5em;
+    margin: 0 auto;
+    color: lime;
+    animation: type 1s steps(40, end), blink 1s step-end infinite;
+}
+
+@keyframes type {
+    from {width:0px}
+    to {width: 5.5em}
 }
 
 /* XS to SM */
