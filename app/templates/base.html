@@ -8,15 +8,16 @@
   <meta name="author" content="name">
   <meta name="description" content="description here">
   <meta name="keywords" content="keywords,here">
-  <link rel="stylesheet" href="/static/css/bootstrap.css" type="text/css">
+  <link rel="stylesheet" href="/static/css/bootstrap.min.css" type="text/css">
   <link rel="stylesheet" href="/static/css/stylesheet.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Audiowide|VT323" rel="stylesheet">
 </head>
 
-<body>
+<body class="d-flex flex-column">
   <!-- Navbar -->
   <div>{% include 'layout/navi.html' %}</div>
   <!-- Content -->
-  <div>{% block content %}{% endblock %}</div>
+  <div class="flex-grow-1">{% block content %}{% endblock %}</div>
   <!-- Footer -->
   <div>{% include 'layout/footer.html' %}</div>
   <!-- Scripts -->
