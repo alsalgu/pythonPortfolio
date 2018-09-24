@@ -1,14 +1,12 @@
 {% extends 'base.html' %}
 {% block content %}
-<div class="h-100 d-flex flex-column">
-    <div class="bg-dark p-3">
+<div id="contentBlock" class="h-100 d-flex flex-column">
+    <div id="websiteHeader" class="bg-dark">
         <div class="title-font text-danger text-center">Al Saldana</div>
         <div class="typing hacker">
             $ python Dev
         </div>
-    </div>
-    <div class="bg-light flex-grow-1">
-        <div id="largeSocial" class="bg-dark pl-2 pr-2 pb-1 d-none d-sm-flex justify-content-around">
+        <div id="largeSocial" class="bg-dark pl-2 pr-2 pt-2 d-none d-sm-flex justify-content-around">
             <div class="d-flex flex-wrap align-items-center">
                 <a href="https://www.linkedin.com/in/alsalgu/" target="_blank" class="btn hacker text-info">
                     <img src="/static/img/icons/linkedin.png" class="mr-1">
@@ -28,7 +26,7 @@
                 </a>
             </div>
         </div>
-        <div id="smallSocial" class="bg-dark pl-2 pr-2 pb-2 d-flex d-sm-none justify-content-center">
+        <div id="smallSocial" class="bg-dark p-2 d-flex d-sm-none justify-content-center">
             <div class="dropdown">
                 <button class="btn btn-primary dropdown-toggle hacker" type="button" id="dropdownMenu1" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
@@ -50,36 +48,23 @@
                 </div>
             </div>
         </div>
-        <p class="p-3">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacus lorem, convallis ut ipsum sit amet,
-            dictum varius dui. Maecenas fringilla mauris non consectetur mattis. Nam tincidunt nulla et justo luctus,
-            vel hendrerit eros porta. Quisque finibus elit vitae felis consequat, feugiat laoreet lacus condimentum.
-            Nulla blandit felis ut lobortis posuere. Praesent ullamcorper blandit massa non ullamcorper. Sed ac tortor
-            cursus, finibus dolor sit amet, porttitor tellus. Etiam lobortis auctor sapien a mattis. Nullam egestas mi
-            lectus, at interdum sapien volutpat et. Sed dui lacus, venenatis eu mauris non, interdum mollis nisl. Cras
-            ut eros sed arcu luctus placerat.
-
-            Quisque condimentum metus ut maximus semper. Duis a mauris id nibh mollis ornare. Mauris quis nulla vitae
-            sapien dapibus ultrices. Suspendisse imperdiet dui nec tortor cursus aliquam. Cras ullamcorper hendrerit
-            scelerisque. Cras turpis diam, auctor gravida quam porta, dignissim placerat justo. Maecenas dictum velit
-            sit amet dui tincidunt consectetur.
-
-            In et justo commodo, interdum ligula ut, bibendum felis. Fusce sit amet velit tempus, pellentesque nunc eu,
-            luctus lorem. Mauris imperdiet nisi eu nunc commodo, nec commodo tortor dapibus. Suspendisse nec volutpat
-            ipsum. Etiam fringilla facilisis diam id dapibus. Nullam venenatis tellus a velit eleifend, vitae auctor mi
-            suscipit. Phasellus nibh sem, dictum eu venenatis eu, facilisis eget tortor. Maecenas ut pulvinar leo.
-            Praesent blandit id sem congue convallis.
-
-            Sed ornare volutpat felis, vel fringilla tellus commodo fringilla. Aliquam erat volutpat. Proin consectetur
-            posuere velit, non accumsan diam fermentum vitae. Praesent eu augue at purus accumsan varius. Donec eu
-            lectus maximus risus placerat semper eget ut ipsum. Pellentesque massa sapien, sollicitudin vitae sapien
-            id, pharetra pellentesque purus. Sed ornare suscipit pellentesque.
-
-            Quisque ex velit, maximus in imperdiet non, sagittis id urna. Cras varius sodales feugiat. Aenean a sem id
-            purus faucibus dictum quis nec ex. Nam sapien metus, commodo quis accumsan sed, aliquet et risus. Donec id
-            leo in augue mattis aliquet eu et turpis. Sed sit amet efficitur risus, vel tincidunt nisl. Etiam nec enim
-            nisi. Nam condimentum lectus ligula, eget porta sem ornare eget.
-        </p>
+    </div>
+    <div  id="websiteBody" class="bg-light flex-grow-1 d-flex flex-column align-items-center p-2">
+        <div id="backendTerminal" class="container bg-dark rounded shadow pb-1">
+            <div class="row no-gutters">
+                <div class="d-flex align-items-center">
+                    <div class="trm-btn rounded-circle bg-success mr-1"></div>
+                    <div class="trm-btn rounded-circle bg-warning mr-1"></div>
+                    <div class="trm-btn rounded-circle bg-danger mr-1"></div>
+                </div>
+                <div class="d-flex flex-fill justify-content-center">
+                    <span class="text-white">al@v-Pro: ~/Desktop/pics/puppies</span>
+                </div>
+            </div>
+            <div class="bg-dark text-white hacker">
+                <span>>>> print(back-end-skills)</span>
+            </div>
+        </div>
     </div>
 </div>
 

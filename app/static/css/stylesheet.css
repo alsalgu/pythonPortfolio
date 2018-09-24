@@ -9,13 +9,13 @@ html, body {
 }
 
 .text-green{
-    color: #03e603;
+    color: lime;
 }
 
 /* Font Styles */
 
 .display-font {
-    font-family: 'VT323', monospace;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 2em;
 }
 
@@ -25,8 +25,7 @@ html, body {
 }
 
 .hacker{
-    font-family: 'VT323', monospace;
-    font-size: 1.5em
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .fast {
@@ -74,6 +73,13 @@ html, body {
     to {width: 5.5em}
 }
 
+/* Terminal */
+
+.trm-btn {
+    width: 10px;
+    height: 10px;
+}
+
 /* XS to SM */
 
 @media (min-width: 0px) and (max-width: 660px) {
@@ -83,13 +89,11 @@ html, body {
     }
     
     .display-font {
-        font-family: 'VT323', monospace;
-        font-size: 1.2em;
+        font-family: 'Ubuntu', sans-serif;
     }
 
     .hacker {
-        font-family: 'VT323', monospace;
-        font-size: 1.2em
+        font-family: 'Ubuntu', sans-serif;
     }
 
   }
@@ -102,8 +106,8 @@ html, body {
         font-size: 3em;
     }
     
-    .display-font {
-        font-family: 'VT323', monospace;
+    .display-font {    
+        font-family: 'Ubuntu', sans-serif;
         font-size: 1.5em;
     }
   }
