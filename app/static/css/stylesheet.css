@@ -62,7 +62,7 @@ html, body {
     border-right-width: .15em;
     border-right-style: solid;
     border-right-color: lime;
-    width: 5.5em;
+    width: 6.2em;
     margin: 0 auto;
     color: lime;
     animation: type 1s steps(40, end), blink 1s step-end infinite;
@@ -70,7 +70,7 @@ html, body {
 
 @keyframes type {
     from {width:0px}
-    to {width: 5.5em}
+    to {width: 6.2em}
 }
 
 /* Terminal */
