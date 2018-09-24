@@ -12,10 +12,12 @@ html, body {
 .display-font {
     font-family: 'VT323', monospace;
     color: #03e603;
+    font-size: 2em;
 }
 
 .title-font {
     font-family: 'Audiowide', cursive;
+    font-size: 4.5em;
 }
 
 /* Cursor ANimation */
@@ -40,3 +42,32 @@ html, body {
     from {background-color: #03e603;}
     to {background-color: transparent;}
 }
+
+/* XS to SM */
+
+@media (min-width: 0px) and (max-width: 660px) {
+    .title-font {
+        font-family: 'Audiowide', cursive;
+        font-size: 2.5em;
+    }
+    
+    .display-font {
+        font-family: 'VT323', monospace;
+        font-size: 1.2em;
+    }
+
+  }
+  
+  /* SM to LG */
+  
+  @media (min-width: 660px) and (max-width: 992px) {
+    .title-font {
+        font-family: 'Audiowide', cursive;
+        font-size: 3em;
+    }
+    
+    .display-font {
+        font-family: 'VT323', monospace;
+        font-size: 1.5em;
+    }
+  }
