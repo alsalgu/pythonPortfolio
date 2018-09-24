@@ -84,7 +84,7 @@
         <!-- Art Terminal -->
         <div id="MSPaint" class="container-fluid shadow emboss">
             <div id="MSHeader" class="row">
-                <div class="embossBlue d-flex flex-fill m-1">
+                <div class="d-flex flex-fill m-1 inner-shadow Blue">
                     <div class="d-flex flex-nowrap flex-fill ml-1">
                         <span class="text-white d-none d-sm-block">artist.png - Paint</span>
                         <span class="text-white d-sm-none">artist.png</span>
@@ -107,7 +107,7 @@
                     <span class="text-black m-0">File</span>
                 </div>
             </div>
-            <div id="MSview" class="row">
+            <div id="MSview" class="row pb-1">
                 <div class="d-flex flex-fill ml-2 mr-2">
                     <div class="d-inline-block ms-right pr-2">
                         <div class="container">
@@ -116,7 +116,9 @@
                         </div>
                     </div>
 
-                    <div class="d-flex flex-fill bg-secondary ms-top">f</div>
+                    <div id="MSwindow" class="d-flex flex-fill ms-top inner-shadow" style="background-color: #a8a8a8">
+                        <p id="MScanvas" class="m-1 p-1 bg-white d-flex flex-fill">Paint Job</p>
+                    </div>
                 </div>
             </div>
         </div>

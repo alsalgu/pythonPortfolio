@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     height: 100%;
     min-width: 300px;
 }
@@ -8,7 +9,7 @@ html, body {
     background-color: black;
 }
 
-.text-green{
+.text-green {
     color: lime;
 }
 
@@ -24,19 +25,23 @@ html, body {
     font-size: 4.5em;
 }
 
-.hacker{
+.hacker {
     font-family: 'Ubuntu', sans-serif;
 }
 
 .fast {
     font-family: 'Audiowide', cursive;
 }
+
 /* Cursor ANimation */
 
 .cursorBlink {
-    -webkit-animation-name: blink; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
-    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    -webkit-animation-name: blink;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite;
+    /* Safari 4.0 - 8.0 */
     animation-name: blink;
     animation-duration: 0.7s;
     animation-iteration-count: infinite;
@@ -44,14 +49,28 @@ html, body {
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes blink {
-    from, to {border-right-color: lime}
-    50% {border-right-color: transparent}
+
+    from,
+    to {
+        border-right-color: lime
+    }
+
+    50% {
+        border-right-color: transparent
+    }
 }
 
 /* Standard */
 @keyframes blink {
-    from, to {border-right-color: lime}
-    50% {border-right-color: transparent}
+
+    from,
+    to {
+        border-right-color: lime
+    }
+
+    50% {
+        border-right-color: transparent
+    }
 }
 
 /* Typing Animation */
@@ -69,8 +88,13 @@ html, body {
 }
 
 @keyframes type {
-    from {width:0px}
-    to {width: 12em}
+    from {
+        width: 0px
+    }
+
+    to {
+        width: 12em
+    }
 }
 
 /* Terminal */
@@ -101,19 +125,21 @@ html, body {
 }
 
 .emboss {
-    background-color: grey;
+    background-color: #a8a8a8;
     border-bottom: 2px solid darkslategrey;
     border-right: 2px solid darkslategrey;
-    border-left: 2px solid lightgrey;
-    border-top: 2px solid lightgrey;
+    border-left: 2px solid #a5a4a4;
+    border-top: 2px solid #a5a4a4;
 }
 
-.embossBlue {
+.Blue {
     background-color: blue;
-    border-bottom: 2px solid darkblue;
-    border-right: 2px solid darkblue;
-    border-left: 2px solid lightblue;
-    border-top: 2px solid lightblue;
+}
+
+.inner-shadow {
+    -webkit-box-shadow: inset 0px 0px 8px 3px rgba(0,0,0,0.67);
+    -moz-box-shadow: inset 0px 0px 8px 3px rgba(0,0,0,0.67);
+    box-shadow: inset 0px 0px 8px 3px rgba(0,0,0,0.67);
 }
 
 /* XS to SM */
@@ -123,7 +149,7 @@ html, body {
         font-family: 'Audiowide', cursive;
         font-size: 2.5em;
     }
-    
+
     .display-font {
         font-family: 'Ubuntu', sans-serif;
     }
@@ -132,18 +158,18 @@ html, body {
         font-family: 'Ubuntu', sans-serif;
     }
 
-  }
-  
-  /* SM to LG */
-  
-  @media (min-width: 660px) and (max-width: 992px) {
+}
+
+/* SM to LG */
+
+@media (min-width: 660px) and (max-width: 992px) {
     .title-font {
         font-family: 'Audiowide', cursive;
         font-size: 3em;
     }
-    
-    .display-font {    
+
+    .display-font {
         font-family: 'Ubuntu', sans-serif;
         font-size: 1.5em;
     }
-  }
+}
