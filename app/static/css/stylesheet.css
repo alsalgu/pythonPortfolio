@@ -62,15 +62,15 @@ html, body {
     border-right-width: .15em;
     border-right-style: solid;
     border-right-color: lime;
-    width: 6.2em;
+    width: 12em;
     margin: 0 auto;
     color: lime;
-    animation: type 1s steps(40, end), blink 1s step-end infinite;
+    animation: type 1.7s steps(40, end), blink 1s step-end infinite;
 }
 
 @keyframes type {
     from {width:0px}
-    to {width: 6.2em}
+    to {width: 12em}
 }
 
 /* Terminal */

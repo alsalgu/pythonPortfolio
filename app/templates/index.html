@@ -4,7 +4,7 @@
     <div id="websiteHeader" class="bg-dark">
         <div class="title-font text-danger text-center">Al Saldana</div>
         <div class="typing hacker">
-            $ python Dev
+            $ python Full-Stack-Dev.py
         </div>
         <div id="largeSocial" class="bg-dark pl-2 pr-2 pt-2 d-none d-sm-flex justify-content-around">
             <div class="d-flex flex-wrap align-items-center">
@@ -49,21 +49,35 @@
             </div>
         </div>
     </div>
-    <div  id="websiteBody" class="bg-light flex-grow-1 d-flex flex-column align-items-center p-2">
-        <div id="backendTerminal" class="container-fluid bg-dark rounded shadow pb-1 m-0">
-            <div class="row no-gutters">
+    <div id="websiteBody" class="bg-light flex-grow-1 d-flex flex-column align-items-center p-2">
+        <div id="terminal" class="container-fluid bg-dark rounded shadow pb-1 m-0">
+            <div id="terminalHeader" class="row no-gutters">
                 <div class="d-flex align-items-center">
                     <div class="trm-btn rounded-circle bg-success mr-1"></div>
                     <div class="trm-btn rounded-circle bg-warning mr-1"></div>
                     <div class="trm-btn rounded-circle bg-danger mr-1"></div>
                 </div>
                 <div class="d-flex flex-nowrap flex-fill justify-content-center">
-                    <span class="text-white d-none d-sm-block">al@v-Pro: ~/Desktop/pics/puppies</span>
+                    <span class="text-white d-none d-sm-block">al@v-Pro: ~/Dev</span>
                     <span class="text-white d-sm-none">al@v-Pro: ~</span>
                 </div>
             </div>
-            <div class="bg-dark text-white hacker">
-                <span>>>> print(back-end-skills)</span>
+            <div id="terminalBody" class="bg-dark text-white hacker d-flex flex-column">
+                <a class="btn text-white mb-1 text-left" href="#backendCollapse" data-toggle="collapse" aria-expanded="false"
+                    aria-controls="backendCollapse">
+                    >>> print(back-end-skills)
+                </a>
+                <div id="backendCollapse" class="collapse">These are my skills.</div>
+                <a class="btn text-white mb-1 text-left" href="#frontendCollapse" data-toggle="collapse" aria-expanded="false"
+                aria-controls="frontendCollapse">
+                >>> print(front-end-skills)
+                </a>
+                <div id="frontendCollapse" class="collapse">These are my other skills.</div>
+                <a class="btn text-white mb-1 text-left" href="#devCollapse" data-toggle="collapse" aria-expanded="false"
+                aria-controls="devCollapse">
+                >>> print(dev-skills)
+                </a>
+                <div id="devCollapse" class="collapse">These are my other, other skills.</div>
             </div>
         </div>
     </div>
