@@ -8,7 +8,7 @@ $(document).ready(function () {
         $("#MStoolbar").find(".embossBTN2").each(function () {
             $(this).removeClass("embossBTN2").addClass('embossBTN')
         });
-        $('#MScanvas').find('.paint').each(function(){
+        $('#MSPaint').find('.paint').each(function(){
             $(this).addClass('d-none');
         });
     };
@@ -19,7 +19,6 @@ $(document).ready(function () {
             resetButtons();
             activeButton(this);
             $(eID).removeClass('d-none');
-            console.log(eID)
         })
     });
 })

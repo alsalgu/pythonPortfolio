@@ -144,7 +144,7 @@
                     <!-- MS Paint Canvas Window-->
                     <div id="MSwindow" class="d-flex flex-fill ms-top inner-shadow emboss2" style="background-color: #a8a8a8">
                         <div id="MScanvas" class="m-1 p-1 bg-white d-flex flex-fill">
-                            <span class="paint avocado d-none">Avocado</span>
+                            <div class="paint avocado w-100 d-none">{% include 'extras/aesthetic.html'%}</div>
                             <span class="paint pizza d-none">Pizza</span>
                             <span class="paint donut d-none">Jelly-Filled Donut</span>
                             <span class="paint sushi d-none">Sushi</span>
@@ -156,12 +156,20 @@
             </div>
             <div id="MSstatus" class="row mt-1 mb-1">
                 <div id="MSstatusInfo" class="d-flex flex-fill ml-2 mr-2 p-1 emboss2">
-                    Sup
+                    <span class="paint">Click on a Tool.</span>
+                    <span class="paint avocado d-none">Avocado</span>
+                    <span class="paint pizza d-none">Pizza</span>
+                    <span class="paint donut d-none">Jelly-Filled Donut</span>
+                    <span class="paint sushi d-none">Sushi</span>
+                    <span class="paint wine d-none">Wine</span>
+                    <span class="paint bottle d-none">Bottle</span>
                 </div>
             </div>
         </div>
-        <!-- TBD Terminal-->
+
+
     </div>
+</div>
 </div>
 
 {% endblock %}

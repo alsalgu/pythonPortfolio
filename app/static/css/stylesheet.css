@@ -145,7 +145,7 @@ body {
     cursor: pointer;
 }
 
-.embossBTN2{
+.embossBTN2 {
     background-color: lightgrey;
     border-top: 2px solid darkslategrey;
     border-left: 2px solid darkslategrey;
@@ -186,10 +186,11 @@ body {
 }
 
 .inner-shadow {
-    -webkit-box-shadow: inset 0px 0px 8px 3px rgba(0,0,0,0.67);
-    -moz-box-shadow: inset 0px 0px 8px 3px rgba(0,0,0,0.67);
-    box-shadow: inset 0px 0px 8px 3px rgba(0,0,0,0.67);
-}
+    -webkit-box-shadow: inset 0px 0px 8px 3px rgba(0, 0, 0, 0.67);
+    -moz-box-shadow: inset 0px 0px 8px 3px rgba(0, 0, 0, 0.67);
+    box-shadow: inset 0px 0px 8px 3px rgba(0, 0, 0, 0.67);
+} 
+
 
 /* XS to SM */
 
