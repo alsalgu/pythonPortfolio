@@ -141,6 +141,10 @@ body {
 
 }
 
+.eb {
+    cursor: pointer;
+}
+
 .embossBTN2{
     background-color: lightgrey;
     border-top: 2px solid darkslategrey;
@@ -159,6 +163,26 @@ body {
 
 .Blue {
     background-color: blue;
+}
+
+.menuBTN {
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.menuBTN:hover {
+    background-color: blue;
+    color: white;
+    border: 2px solid transparent;
+}
+
+.menuBTN:active {
+    background-color: #a8a8a8;
+    border-top: 2px solid darkslategrey;
+    border-left: 2px solid darkslategrey;
+    border-right: 2px solid #bbbbbb;
+    border-bottom: 2px solid #bbbbbb;
+    color: black;
 }
 
 .inner-shadow {
