@@ -132,6 +132,14 @@ body {
     border-top: 2px solid #bbbbbb;
 }
 
+.emboss2 {
+    background-color: #a8a8a8;
+    border-top: 2px solid darkslategrey;
+    border-left: 2px solid darkslategrey;
+    border-right: 2px solid #bbbbbb;
+    border-bottom: 2px solid #bbbbbb;
+}
+
 .Blue {
     background-color: blue;
 }

@@ -84,7 +84,7 @@
         <!-- Art Terminal -->
         <div id="MSPaint" class="container-fluid shadow emboss">
             <div id="MSHeader" class="row">
-                <div class="d-flex flex-fill m-1 inner-shadow Blue">
+                <div class="d-flex flex-fill m-1 emboss2 Blue">
                     <div class="d-flex flex-nowrap flex-fill ml-1">
                         <span class="text-white d-none d-sm-block">artist.png - Paint</span>
                         <span class="text-white d-sm-none">artist.png</span>
@@ -126,18 +126,30 @@
             <div id="MSview" class="row pb-1">
                 <div class="d-flex flex-fill ml-2 mr-2">
                     <div class="d-inline-block ms-right pr-2" style="width: 70px;">
-                        <div class="container">
+                        <div id="MStoolbar" class="container">
                             <div class="row">
-                                <div class="w-50 emboss text-center">x</div>
-                                <div class="w-50 emboss text-center">s</div>
+                                <div class="w-50 emboss text-center">&#x2999;</div>
+                                <div class="w-50 emboss text-center">&#x2B1A;</div>
                             </div>
-
+                            <div class="row">
+                                <div class="w-50 emboss text-center">&#x2B1A;</div>
+                                <div class="w-50 emboss text-center">&#x2B1A;</div>
+                            </div>
+                            <div class="row">
+                                <div class="w-50 emboss text-center">&#x2B1A;</div>
+                                <div class="w-50 emboss text-center">&#x2B1A;</div>
+                            </div>
                         </div>
                     </div>
 
-                    <div id="MSwindow" class="d-flex flex-fill ms-top inner-shadow" style="background-color: #a8a8a8">
+                    <div id="MSwindow" class="d-flex flex-fill ms-top inner-shadow emboss2" style="background-color: #a8a8a8">
                         <p id="MScanvas" class="m-1 p-1 bg-white d-flex flex-fill">Paint Job</p>
                     </div>
+                </div>
+            </div>
+            <div id="MSstatus" class="row mt-1 mb-1">
+                <div id="MSstatusInfo" class="d-flex flex-fill ml-2 mr-2 p-1 emboss2">
+                    Sup
                 </div>
             </div>
         </div>
