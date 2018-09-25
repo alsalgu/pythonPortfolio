@@ -138,12 +138,11 @@ body {
     border-right: 2px solid darkslategrey;
     border-left: 2px solid #bbbbbb;
     border-top: 2px solid #bbbbbb;
-    transition-duration: 0.3s;
 
 }
 
-.embossBTN:active {
-    background-color: grey;
+.embossBTN2{
+    background-color: lightgrey;
     border-top: 2px solid darkslategrey;
     border-left: 2px solid darkslategrey;
     border-right: 2px solid #bbbbbb;
