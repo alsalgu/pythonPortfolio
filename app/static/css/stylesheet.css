@@ -230,6 +230,10 @@ p {
     position: relative;
 }
 
+.text-shadow {
+    text-shadow: 1px 2px black;
+}
+
 /* XS to SM */
 
 @media (min-width: 0px) and (max-width: 660px) {
