@@ -6,3 +6,7 @@ import requests
 @bp.route('/')
 def index():
     return render_template('index.html')
+
+@bp.route('/aesthetic')
+def aesthetic():
+    return render_template('extras/aesthetic.html')

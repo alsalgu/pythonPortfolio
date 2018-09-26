@@ -1,0 +1,92 @@
+<!-- Art Terminal -->
+<div id="MSPaint" class="container-fluid shadow emboss">
+    <div id="MSHeader" class="row">
+        <div class="d-flex flex-fill ml-2 mr-2 mt-1 mb-1 emboss2 Blue">
+            <div class="d-flex flex-nowrap flex-fill ml-1">
+                <div class="text-white d-none d-sm-block">artist.png - Paint</div>
+                <div class="text-white d-sm-none">artist.png</div>
+            </div>
+            <div class="d-flex align-items-center mr-1">
+                <div class="d-flex justify-content-center align-items-center trm-btn2 embossBTN mr-1 pb-1">
+                    <div class="font-weight-bold eb">_</div>
+                </div>
+                <div class="d-flex justify-content-center align-items-center trm-btn2 mr-1 embossBTN">
+                    <div class="eb">&#x25A1;</div>
+                </div>
+                <div class="d-flex justify-content-center align-items-center trm-btn2 embossBTN">
+                    <div class="font-weight-bold eb">x</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="MSmenuBar" class="container-fluid pl-1 mb-1 ml-1">
+        <div id="MSmenuButtons" class="row">
+            <div class="menuBTN pl-1 pr-1">
+                <u>F</u>ile
+            </div>
+            <div class="menuBTN pl-1 pr-1">
+                <u>E</u>dit
+            </div>
+            <div class="menuBTN pl-1 pr-1">
+                <u>V</u>iew
+            </div>
+            <div class="menuBTN pl-1 pr-1">
+                <u>O</u>ptions
+            </div>
+            <div class="menuBTN pl-1 pr-1">
+                <a href="{{url_for('main.aesthetic')}}"><u>H</u>elp</a>
+            </div>
+        </div>
+    </div>
+    <!-- MS Paint Main Body-->
+    <div id="MSview" class="row pb-1">
+        <div class="d-flex flex-fill ml-2 mr-2">
+            <div class="d-inline-block ms-right pr-2 ebToolbar">
+                <!-- Paint Toolbar Buttons -->
+                <div id="MStoolbar" class="container">
+                    <div class="row">
+                        <div id="avocado" class="w-50 eb embossBTN text-center">&#x1F951;</div>
+                        <div id="pizza" class="w-50 eb embossBTN text-center">&#x1F355;</div>
+                    </div>
+                    <div class="row">
+                        <div id="donut" class="w-50 eb embossBTN text-center">&#x1F359;</div>
+                        <div id="sushi" class="w-50 eb embossBTN text-center">&#x1F363;</div>
+                    </div>
+                    <div class="row">
+                        <div id="wine" class="w-50 eb embossBTN text-center">&#x1F377;</div>
+                        <div id="bottle" class="w-50 eb embossBTN text-center">&#x1F37C;</div>
+                    </div>
+                </div>
+            </div>
+            <!-- MS Paint Canvas Window-->
+            <div id="MSwindow" class="d-flex flex-fill ms-top inner-shadow emboss2" style="background-color: #a8a8a8">
+                <div id="MScanvas" class="m-1 bg-white d-flex flex-fill">
+                    <div class="paint avocado container-fluid d-none crtBG crt m-0 p-0">
+                        <div class="d-flex flex-fill flex-column text-info crtScreen">
+                            <div class="">
+                                <div class="w-100 bg-black p-2 vapor-font text-center">A E S T H E T I C</div>
+                                <img src="/static/img/bg/aesthetic.jpg" class="w-100">
+                            </div>
+                        </div>
+                    </div>
+                    <span class="paint pizza d-none">Pizza</span>
+                    <span class="paint donut d-none">Jelly-Filled Donut</span>
+                    <span class="paint sushi d-none">Sushi</span>
+                    <span class="paint wine d-none">Wine</span>
+                    <span class="paint bottle d-none">Bottle</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="MSstatus" class="row mt-1 mb-1">
+        <div id="MSstatusInfo" class="d-flex flex-fill ml-2 mr-2 p-1 emboss2">
+            <span class="paint">Click on a Tool.</span>
+            <span class="paint avocado d-none">It's all in your head...</span>
+            <span class="paint pizza d-none">Pizza</span>
+            <span class="paint donut d-none">Jelly-Filled Donut</span>
+            <span class="paint sushi d-none">Sushi</span>
+            <span class="paint wine d-none">Wine</span>
+            <span class="paint bottle d-none">Bottle</span>
+        </div>
+    </div>
+</div>
