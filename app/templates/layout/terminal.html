@@ -1,31 +1,87 @@
-        <!-- Dev Terminal -->
-        <div id="terminalDev" class="container-fluid bg-dark rounded shadow pb-1 mb-1">
-                <div id="terminalHeader" class="row no-gutters">
-                    <div class="d-flex align-items-center">
-                        <div class="trm-btn rounded-circle bg-success mr-1"></div>
-                        <div class="trm-btn rounded-circle bg-warning mr-1"></div>
-                        <div class="trm-btn rounded-circle bg-danger mr-1"></div>
-                    </div>
-                    <div class="d-flex flex-nowrap flex-fill justify-content-center">
-                        <div class="text-white d-none d-sm-block">al@v-Pro: ~/Dev</div>
-                        <div class="text-white d-sm-none">al@v-Pro: ~</div>
-                    </div>
-                </div>
-                <div id="terminalBody" class="bg-dark text-white hacker d-flex flex-column">
-                    <a class="btn text-white mb-1 text-left" href="#backendCollapse" data-toggle="collapse" aria-expanded="false"
-                        aria-controls="backendCollapse">
-                        >>> print(back-end-skills)
-                    </a>
-                    <div id="backendCollapse" class="collapse">These are my skills.</div>
-                    <a class="btn text-white mb-1 text-left" href="#frontendCollapse" data-toggle="collapse" aria-expanded="false"
-                        aria-controls="frontendCollapse">
-                        >>> print(front-end-skills)
-                    </a>
-                    <div id="frontendCollapse" class="collapse">These are my other skills.</div>
-                    <a class="btn text-white mb-1 text-left" href="#devCollapse" data-toggle="collapse" aria-expanded="false"
-                        aria-controls="devCollapse">
-                        >>> print(dev-skills)
-                    </a>
-                    <div id="devCollapse" class="collapse">These are my other, other skills.</div>
-                </div>
+<!-- Dev Terminal -->
+<div id="terminalDev" class="container-fluid bg-dark rounded shadow pb-1 mb-1">
+    <div id="terminalHeader" class="row no-gutters">
+        <div class="d-flex align-items-center">
+            <div class="trm-btn rounded-circle bg-success mr-1"></div>
+            <div class="trm-btn rounded-circle bg-warning mr-1"></div>
+            <div class="trm-btn rounded-circle bg-danger mr-1"></div>
+        </div>
+        <div class="d-flex flex-nowrap flex-fill justify-content-center">
+            <div class="text-white d-none d-sm-block">al@v-Pro: ~/Dev</div>
+            <div class="text-white d-sm-none">al@v-Pro: ~</div>
+        </div>
+    </div>
+    <!-- Back End Skills-->
+    <div id="terminalBody" class="bg-dark text-white hacker d-flex flex-column">
+        <a class="btn text-white mb-1 text-left" href="#backendCollapse" data-toggle="collapse" aria-expanded="false"
+            aria-controls="backendCollapse">
+            >>> print(back_end_skills)
+        </a>
+        <div id="backendCollapse" class="collapse pl-2 pb-2">
+            <div class="mt-1">
+                <span class="text-white mr-1">Python:</span>
+                <span class="badge badge-primary">Flask</span>
+                <span class="badge badge-primary">WTForms</span>
+                <span class="badge badge-primary">requests</span>
+                <span class="badge badge-primary">PANDAS</span>
+                <span class="badge badge-primary">Seaborn/matlibplot</span>
             </div>
+            <div class="mt-1 mb-1">
+                <span class="text-white mr-1">Databases:</span>
+                <span class="badge badge-secondary">postgreSQL</span>
+                <span class="badge badge-secondary">sqlite</span>
+                <span class="badge badge-secondary">MongoDB</span>
+            </div>
+            <div>
+                <span class="text-white mr-1">Data:</span>
+                <span class="badge badge-danger">BeautifulSoup</span>
+                <span class="badge badge-danger">JSON</span>
+                <span class="badge badge-danger">API</span>
+                <span class="badge badge-danger">Jupyter Notebooks</span>
+                </span>
+            </div>
+        </div>
+        <!-- Front End -->
+        <a class="btn text-white mb-1 text-left" href="#frontendCollapse" data-toggle="collapse" aria-expanded="false"
+            aria-controls="frontendCollapse">
+            >>> print(front_end_skills)
+        </a>
+        <div id="frontendCollapse" class="collapse">
+            <div class="mt-1 mb-1">
+                <span class="text-white mr-1">JavaScript:</span>
+                <span class="badge badge-primary">Vanilla</span>
+                <span class="badge badge-primary">jQuery</span>
+                <span class="badge badge-primary">React.JS</span>
+                <span class="badge badge-primary">Express.JS</span>
+            </div>
+            <div>
+                <span class="text-white">Design:</span>
+                <span class="badge badge-secondary">Bootstrap</span>
+                <span class="badge badge-secondary">HTML5/CSS3</span>
+            </div>
+        </div>
+        <!-- General Dev Skills -->
+        <a class="btn text-white mb-1 text-left" href="#devCollapse" data-toggle="collapse" aria-expanded="false"
+            aria-controls="devCollapse">
+            >>> print(dev_skills)
+        </a>
+        <div id="devCollapse" class="collapse">
+            <div class="mt-1 mb-1">
+                <span class="text-white mr-1">Hosting:</span>
+                <span class="badge badge-primary">Amazon Web Services</span>
+                <span class="badge badge-primary">Apache2</span>
+            </div>
+            <div class="mb-1">
+                <span class="text-white mr-1">Tools:</span>
+                <span class="badge badge-secondary">Linux</span>
+                <span class="badge badge-secondary">Git</span>
+            </div>
+            <div>
+                <span class="text-white">Creative:</span>
+                <span class="badge badge-danger">Adobe Photoshop</span>
+                <span class="badge badge-danger">Adobe Illustrator</span>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
