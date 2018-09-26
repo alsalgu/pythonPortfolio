@@ -129,7 +129,7 @@ p {
 }
 
 .emboss {
-    background-color: #C6C6C6;
+    background-color: #C0C0C0;
     border-bottom: 2px solid darkslategrey;
     border-right: 2px solid darkslategrey;
     border-left: 2px solid #bbbbbb;
@@ -137,11 +137,11 @@ p {
 }
 
 .embossBTN {
-    background-color: #C6C6C6;
+    background-color: #C0C0C0;
     border-bottom: 2px solid darkslategrey;
     border-right: 2px solid darkslategrey;
-    border-left: 2px solid #bbbbbb;
-    border-top: 2px solid #bbbbbb;
+    border-left: 2px solid #e0e0e0;
+    border-top: 2px solid #e0e0e0;
 
 }
 
@@ -155,19 +155,19 @@ p {
 }
 
 .embossBTN2 {
-    background-color: lightgrey;
+    background-color: #EEEEEE;
     border-top: 2px solid darkslategrey;
     border-left: 2px solid darkslategrey;
-    border-right: 2px solid #bbbbbb;
-    border-bottom: 2px solid #bbbbbb;
+    border-right: 2px solid #e0e0e0;
+    border-bottom: 2px solid #e0e0e0;
 }
 
 .emboss2 {
-    background-color: #C6C6C6;
+    background-color: #C0C0C0;
     border-top: 2px solid darkslategrey;
     border-left: 2px solid darkslategrey;
-    border-right: 2px solid #bbbbbb;
-    border-bottom: 2px solid #bbbbbb;
+    border-right: 2px solid #e0e0e0;
+    border-bottom: 2px solid #e0e0e0;
 }
 
 .Blue {
@@ -189,8 +189,8 @@ p {
     background-color: #a8a8a8;
     border-top: 2px solid darkslategrey;
     border-left: 2px solid darkslategrey;
-    border-right: 2px solid #bbbbbb;
-    border-bottom: 2px solid #bbbbbb;
+    border-right: 2px solid #e0e0e0;
+    border-bottom: 2px solid #e0e0e0;
     color: black;
 }
 
@@ -215,14 +215,19 @@ p {
 
 .vapor-font {
     font-family: "Lucida Console", Monaco, monospace;
-    font-size: 2em;
-    opacity: 0.9;
+    font-size: 1.5em;
 }
 
-.canvas {
-    height: 400px;
-    max-height: 400px;
+.canvasView {
+    background-color: #7B7B7B;
+}
+
+.canvasWindow {
     overflow: hidden;
+    height: 300px;
+}
+.canvas {
+    position: relative;
 }
 
 /* XS to SM */

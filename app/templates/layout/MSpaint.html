@@ -40,14 +40,14 @@
     </div>
     <!-- MS Paint Main Body-->
     <div id="MSview" class="row pb-1">
-        <div class="d-flex flex-fill ml-2 mr-2">
+        <div class="d-flex flex-fill pl-2 pr-2">
             <div class="d-inline-block ms-right pr-2 ebToolbar">
                 <!-- Paint Toolbar Buttons -->
                 <div id="MStoolbar" class="container">
                     <!-- Avocado/Pizza Buttons-->
                     <div class="row">
                         <div id="avocado" class="w-50 eb embossBTN2 text-center" data-toggle="tooltip" data-placement="top"
-                            title="Vaporwave Art">&#x1F951;</div>
+                            title="Vaporwave Art">&#x1f47d;</div>
                         <div id="pizza" class="w-50 eb embossBTN text-center" data-toggle="tooltip" data-placement="top"
                             title="About Me">&#x1F355;</div>
                     </div>
@@ -68,19 +68,24 @@
                 </div>
             </div>
             <!-- MS Paint Canvas Window-->
-            <div id="MSwindow" class="d-flex flex-fill ms-top inner-shadow emboss2 canvas" style="background-color: #a8a8a8">
-                <div id="MScanvas" class="mt-1 ml-1 mr-1 mb-0 bg-white d-flex flex-fill">
+            <div id="MSwindow" class="container-fluid p-0 m-0 emboss2 inner-shadow w-100 canvasView">
+                <div id="MScanvas" class="row no-gutters">
                     <!-- Avocado Div -->
-                    <div class="paint avocado container-fluid crtBG m-0 p-0">
-                            <div class="container-fluid h-100 crtScreen">
-                                <div class="row no-gutters m-2">
-                                    <div class="bg-black vapor-font crt text-info w-100 text-center border border-danger border-left-0 border-right-0 border-top-0">A E S T H E T I C</div>
-                                    <div><img src="/static/img/bg/aesthetic.png" class="w-100"></div>
-                                </div>
-                            </div>
+                    <div class="paint avocado m-2 canvasWindow">
+                        <div class="canvas d-flex justify-content-center align-items-center">
+                            <img src="/static/img/bg/aesthetic.png" class="paint avocado h-100 w-100" />
+                            <span class="paint avocado stack crt w-100 text-center p-2 text-secondary vapor-font">
+                                <span class="bg-black pr-1 pl-1">Ｉ ＷΛＮＴ ＴＯ ＢΞＬＩΞＶΞ</span>
+                            </span>
+                            <div class="paint avocado stack crtScreen crtBG h-100"></div>
+                        </div>
                     </div>
                     <!-- Pizza Div -->
-                    <span class="paint pizza d-none">Pizza</span>
+                    <div class="paint pizza d-none m-2 canvasWindow">
+                        <div class="w-100 bg-white">
+                            Pizza
+                        </div>
+                    </div>
                     <!-- Donut Div -->
                     <span class="paint donut d-none">Jelly-Filled Donut</span>
                     <!-- Sushi Div-->
@@ -98,7 +103,7 @@
             <!-- Avocado Desc -->
             <span class="paint avocado">
                 Originally fully drawn and animated with CSS, I opted to save the image itself as a PNG to ease up
-                on the performance.<br />
+                on the performance.
                 You can still see the ghastly gradient-guzzling thing by clicking on the Help button.
             </span>
             <!-- Pizza Desc -->
