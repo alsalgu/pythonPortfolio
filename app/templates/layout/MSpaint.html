@@ -45,7 +45,7 @@
                 <!-- Paint Toolbar Buttons -->
                 <div id="MStoolbar" class="container">
                     <div class="row">
-                        <div id="avocado" class="w-50 eb embossBTN text-center">&#x1F951;</div>
+                        <div id="avocado" class="w-50 eb embossBTN2 text-center">&#x1F951;</div>
                         <div id="pizza" class="w-50 eb embossBTN text-center">&#x1F355;</div>
                     </div>
                     <div class="row">
@@ -60,32 +60,48 @@
             </div>
             <!-- MS Paint Canvas Window-->
             <div id="MSwindow" class="d-flex flex-fill ms-top inner-shadow emboss2" style="background-color: #a8a8a8">
-                <div id="MScanvas" class="m-1 bg-white d-flex flex-fill">
-                    <div class="paint avocado container-fluid d-none crtBG crt canvas m-0 p-0">
+                <div id="MScanvas" class="m-1 bg-white d-flex flex-fill canvas">
+                    <!-- Avocado Div -->
+                    <div class="paint avocado container-fluid crtBG crt m-0 p-0">
                         <div class="d-flex flex-fill flex-column text-info crtScreen justify-content-center text-center">
                             <div>
-                                <div class="w-100 bg-black p-2 vapor-font border border-right-0 border-left-0 border-top-0 border-danger">A E S T H E T I C</div>
-                                <img src="/static/img/bg/aesthetic.jpg" class="canvas border border-danger border-top-0">
+                                <div class="w-100 bg-black p-2 vapor-font border border-right-0 border-left-0 border-top-0 border-danger">A
+                                    E S T H E T I C</div>
+                                <img src="/static/img/bg/aesthetic.png" class="canvas border border-danger border-top-0">
                             </div>
                         </div>
                     </div>
+                    <!-- Pizza Div -->
                     <span class="paint pizza d-none">Pizza</span>
+                    <!-- Donut Div -->
                     <span class="paint donut d-none">Jelly-Filled Donut</span>
+                    <!-- Sushi Div-->
                     <span class="paint sushi d-none">Sushi</span>
+                    <!-- Wine Div -->
                     <span class="paint wine d-none">Wine</span>
+                    <!-- Bottle Div-->
                     <span class="paint bottle d-none">Bottle</span>
                 </div>
             </div>
         </div>
     </div>
     <div id="MSstatus" class="row mt-1 mb-1">
-        <div id="MSstatusInfo" class="d-flex flex-fill ml-2 mr-2 p-1 emboss2">
-            <span class="paint">Click on a Tool.</span>
-            <span class="paint avocado d-none">It's all in your head...</span>
+        <div id="MSstatusInfo" class="d-flex flex-fill ml-2 mr-2 p-2 emboss2 text-center">
+            <!-- Avocado Desc -->
+            <div class="d-flex flex-fill paint avocado">
+                Originally fully drawn and animated with CSS, I opted to save the image itself as a PNG to ease up
+                on the performance.<br/>
+                You can still see the ghastly gradient-guzzling thing by clicking on the Help button.
+            </div>
+            <!-- Pizza Desc -->
             <span class="paint pizza d-none">Pizza</span>
+            <!-- Donut Desc -->
             <span class="paint donut d-none">Jelly-Filled Donut</span>
+            <!-- SUshi Desc-->
             <span class="paint sushi d-none">Sushi</span>
+            <!-- Wine Desc -->
             <span class="paint wine d-none">Wine</span>
+            <!-- Bottle Desc -->
             <span class="paint bottle d-none">Bottle</span>
         </div>
     </div>
