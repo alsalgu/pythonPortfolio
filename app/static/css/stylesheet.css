@@ -4,6 +4,10 @@ body {
     min-width: 324px;
 }
 
+p {
+    padding: 0;
+}
+
 /* Additional Colors */
 .bg-black {
     background-color: black;
@@ -214,9 +218,9 @@ body {
 }
 
 .canvas {
-    height: 300px;
-    max-height: 300px;
-    overflow-y: hidden;
+    height: 400px;
+    max-height: 400px;
+    overflow: hidden;
 }
 
 /* XS to SM */

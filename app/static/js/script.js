@@ -13,6 +13,10 @@ $(document).ready(function () {
         });
     };
 
+    $(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+
     $("#MStoolbar").find(".eb").each(function () {
         $(this).on('click',function () {
             var eID = '.' + $(this).attr('id');

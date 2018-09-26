@@ -44,30 +44,39 @@
             <div class="d-inline-block ms-right pr-2 ebToolbar">
                 <!-- Paint Toolbar Buttons -->
                 <div id="MStoolbar" class="container">
+                    <!-- Avocado/Pizza Buttons-->
                     <div class="row">
-                        <div id="avocado" class="w-50 eb embossBTN2 text-center">&#x1F951;</div>
-                        <div id="pizza" class="w-50 eb embossBTN text-center">&#x1F355;</div>
+                        <div id="avocado" class="w-50 eb embossBTN2 text-center" data-toggle="tooltip" data-placement="top"
+                            title="Vaporwave Art">&#x1F951;</div>
+                        <div id="pizza" class="w-50 eb embossBTN text-center" data-toggle="tooltip" data-placement="top"
+                            title="About Me">&#x1F355;</div>
                     </div>
+                    <!-- Donut/Sushi Buttons -->
                     <div class="row">
-                        <div id="donut" class="w-50 eb embossBTN text-center">&#x1F359;</div>
-                        <div id="sushi" class="w-50 eb embossBTN text-center">&#x1F363;</div>
+                        <div id="donut" class="w-50 eb embossBTN text-center" data-toggle="tooltip" data-placement="top"
+                            title="As an Artist...">&#x1F359;</div>
+                        <div id="sushi" class="w-50 eb embossBTN text-center" data-toggle="tooltip" data-placement="top"
+                            title="As a Designer...">&#x1F363;</div>
                     </div>
+                    <!-- Wine/Bottle Buttons-->
                     <div class="row">
-                        <div id="wine" class="w-50 eb embossBTN text-center">&#x1F377;</div>
-                        <div id="bottle" class="w-50 eb embossBTN text-center">&#x1F37C;</div>
+                        <div id="wine" class="w-50 eb embossBTN text-center" data-toggle="tooltip" data-placement="top"
+                            title="As a Developer...">&#x1F377;</div>
+                        <div id="bottle" class="w-50 eb embossBTN text-center" data-toggle="tooltip" data-placement="top"
+                            title="As a Human...">&#x1F37C;</div>
                     </div>
                 </div>
             </div>
             <!-- MS Paint Canvas Window-->
-            <div id="MSwindow" class="d-flex flex-fill ms-top inner-shadow emboss2" style="background-color: #a8a8a8">
-                <div id="MScanvas" class="m-1 bg-white d-flex flex-fill canvas">
+            <div id="MSwindow" class="d-flex flex-fill ms-top inner-shadow emboss2 canvas" style="background-color: #a8a8a8">
+                <div id="MScanvas" class="mt-1 ml-1 mr-1 mb-0 bg-white d-flex flex-fill">
                     <!-- Avocado Div -->
                     <div class="paint avocado container-fluid crtBG crt m-0 p-0">
-                        <div class="d-flex flex-fill flex-column text-info crtScreen justify-content-center text-center">
-                            <div>
-                                <div class="w-100 bg-black p-2 vapor-font border border-right-0 border-left-0 border-top-0 border-danger">A
-                                    E S T H E T I C</div>
-                                <img src="/static/img/bg/aesthetic.png" class="canvas border border-danger border-top-0">
+                        <div class="d-flex flex-fill flex-column h-100 text-info crtScreen justify-content-center align-items-center text-center">
+                            <div class="container mt-1">
+                                <div>
+                                <span class="bg-black vapor-font">A E S T H E T I C</span></div>
+                                <img src="/static/img/bg/aesthetic.png" class="w-75 border border-danger">
                             </div>
                         </div>
                     </div>
@@ -86,13 +95,13 @@
         </div>
     </div>
     <div id="MSstatus" class="row mt-1 mb-1">
-        <div id="MSstatusInfo" class="d-flex flex-fill ml-2 mr-2 p-2 emboss2 text-center">
+        <div id="MSstatusInfo" class="d-flex flex-fill ml-2 mr-2 p-2 emboss2 justify-content-center text-center">
             <!-- Avocado Desc -->
-            <div class="d-flex flex-fill paint avocado">
+            <span class="paint avocado">
                 Originally fully drawn and animated with CSS, I opted to save the image itself as a PNG to ease up
-                on the performance.<br/>
+                on the performance.<br />
                 You can still see the ghastly gradient-guzzling thing by clicking on the Help button.
-            </div>
+            </span>
             <!-- Pizza Desc -->
             <span class="paint pizza d-none">Pizza</span>
             <!-- Donut Desc -->
