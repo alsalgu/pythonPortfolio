@@ -51,24 +51,24 @@
                 <div id="MStoolbar" class="container">
                     <!-- Avocado/Pizza Buttons-->
                     <div class="row">
-                        <div id="avocado" class="w-50 eb embossBTN2 text-center text-shadow" data-toggle="tooltip" data-placement="top"
-                            title="Vaporwave Art">&#x1f47d;</div>
-                        <div id="pizza" class="w-50 eb embossBTN text-center text-shadow" data-toggle="tooltip" data-placement="top"
-                            title="Projects">&#x1F3AE;</div>
+                        <div id="avocado" class="w-50 eb embossBTN2 text-center text-shadow" data-toggle="tooltip"
+                            data-placement="top" title="Vaporwave Art">&#x1f47d;</div>
+                        <div id="pizza" class="w-50 eb embossBTN text-center text-shadow" data-toggle="tooltip"
+                            data-placement="top" title="Featured Projects">&#x1F3AE;</div>
                     </div>
                     <!-- Donut/Sushi Buttons -->
                     <div class="row">
-                        <div id="donut" class="w-50 eb embossBTN text-center text-shadow" data-toggle="tooltip" data-placement="top"
-                            title="As an Artist...">&#x1f3a8;</div>
-                        <div id="sushi" class="w-50 eb embossBTN text-center text-shadow" data-toggle="tooltip" data-placement="top"
-                            title="As a Designer...">&#x2728;</div>
+                        <div id="donut" class="w-50 eb embossBTN text-center text-shadow" data-toggle="tooltip"
+                            data-placement="top" title="As an Artist...">&#x1f3a8;</div>
+                        <div id="sushi" class="w-50 eb embossBTN text-center text-shadow" data-toggle="tooltip"
+                            data-placement="top" title="As a Designer...">&#x2728;</div>
                     </div>
                     <!-- Wine/Bottle Buttons-->
                     <div class="row">
-                        <div id="wine" class="w-50 eb embossBTN text-center text-shadow" data-toggle="tooltip" data-placement="top"
-                            title="As a Developer...">&#x1f4bb;</div>
-                        <div id="bottle" class="w-50 eb embossBTN text-center text-shadow" data-toggle="tooltip" data-placement="top"
-                            title="As a Human...">&#x1f916;</div>
+                        <div id="wine" class="w-50 eb embossBTN text-center text-shadow" data-toggle="tooltip"
+                            data-placement="top" title="As a Developer...">&#x1f4bb;</div>
+                        <div id="bottle" class="w-50 eb embossBTN text-center text-shadow" data-toggle="tooltip"
+                            data-placement="top" title="As a Human...">&#x1f916;</div>
                     </div>
                 </div>
             </div>
@@ -89,8 +89,10 @@
                     </div>
                     <!-- Pizza Div -->
                     <div class="paint pizza d-none row no-gutters">
-                        <div class="d-flex flex-fill p-2 bg-white d-none m-2 canvasWindow">
-                            Pizza
+                        <div class="w-100 p-2 bg-white m-2 canvasWindowScroll">
+                            <div>
+                                {% include 'paintDivs/pizza.html'%}
+                            </div>
                         </div>
                     </div>
                     <!-- Donut Div -->
@@ -130,7 +132,10 @@
                 You can still see the ghastly gradient-guzzling thing by clicking on the Help button.
             </span>
             <!-- Pizza Desc -->
-            <span class="paint pizza d-none">Pizza</span>
+            <span class="paint pizza d-none">
+                I chose to feature projects where I set up a back-end server and interlaced the front-end
+                functionality.<br/> For more projects, click on the 'View' button.
+            </span>
             <!-- Donut Desc -->
             <span class="paint donut d-none">Jelly-Filled Donut</span>
             <!-- SUshi Desc-->
