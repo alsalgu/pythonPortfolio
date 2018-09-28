@@ -1,5 +1,8 @@
 $(document).ready(function () {
 
+    $('#loading-wrap').remove();
+    $('#body').removeClass('noflow');
+
     function activeButton(button) {
         $(button).removeClass('embossBTN').addClass('embossBTN2');
     };

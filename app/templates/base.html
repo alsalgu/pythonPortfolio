@@ -14,13 +14,16 @@
   <link href="https://fonts.googleapis.com/css?family=Audiowide|family=Ubuntu" rel="stylesheet">
 </head>
 
-<body class="d-flex flex-column">
+<body id="body" class="d-flex flex-column noflow">
   <!-- Navbar -->
-  <div>{% include 'layout/navi.html' %}</div>
-  <!-- Content -->
-  <div class="flex-grow-1">{% block content %}{% endblock %}</div>
-  <!-- Footer -->
-  <div>{% include 'layout/footer.html' %}</div>
+    <div>{% include 'layout/navi.html' %}</div>
+    <!-- Content -->
+    <div class="flex-grow-1">{% block content %}{% endblock %}</div>
+    <!-- Footer -->
+    <div>{% include 'layout/footer.html' %}</div>
+  <!-- Loading Wrap -->
+  <div id="loading-wrap" class="loading-wrap bg-dark crtBG crt text-white d-flex justify-content-center align-items-center">Loading,
+    Please Wait... or not, I'm a div not a cop.</div>
   <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
     crossorigin="anonymous"></script>

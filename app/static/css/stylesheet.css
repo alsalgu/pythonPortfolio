@@ -8,6 +8,18 @@ p {
     padding: 0;
 }
 
+/* Loading */
+
+.loading-wrap { 
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.noflow {
+    overflow: hidden;
+}
+
 /* Additional Colors */
 .bg-black {
     background-color: black;
