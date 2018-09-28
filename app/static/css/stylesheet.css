@@ -10,10 +10,18 @@ p {
 
 /* Loading */
 
-.loading-wrap { 
+.loading-wrap {
     height: 100%;
     width: 100%;
     position: absolute;
+}
+
+.carousel-item {
+    text-align: center;
+}
+
+.carousel-inner img {
+    display: inline-block !important;
 }
 
 .noflow {
@@ -208,8 +216,9 @@ p {
 
 .menuBTN a {
     color: black;
-    text-decoration: none; /* no underline */
-  }
+    text-decoration: none;
+    /* no underline */
+}
 
 .menuBTN:hover a {
     color: white;
@@ -223,7 +232,7 @@ p {
     -webkit-box-shadow: inset 0px 0px 8px 3px rgba(0, 0, 0, 0.67);
     -moz-box-shadow: inset 0px 0px 8px 3px rgba(0, 0, 0, 0.67);
     box-shadow: inset 0px 0px 8px 3px rgba(0, 0, 0, 0.67);
-} 
+}
 
 .vapor-font {
     font-family: "Lucida Console", Monaco, monospace;
@@ -244,6 +253,7 @@ p {
     max-height: 300px;
     overflow: auto;
 }
+
 .canvas {
     position: relative;
 }
