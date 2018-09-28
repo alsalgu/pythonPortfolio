@@ -10,3 +10,8 @@ def index():
 @bp.route('/aesthetic')
 def aesthetic():
     return render_template('extras/aesthetic.html')
+
+@bp.route('/projects/')
+@bp.route('/projects')
+def projects():
+    return render_template('pages/projects.html')
