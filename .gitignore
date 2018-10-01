@@ -113,4 +113,3 @@ dmypy.json
 config.py
 /env
 /.vscode
-/app/static/img
