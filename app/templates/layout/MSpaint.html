@@ -73,11 +73,11 @@
                 </div>
             </div>
             <!-- MS Paint Canvas Window-->
-            <div id="MSwindow" class="container-fluid p-0 m-0 emboss2 inner-shadow w-100 canvasView">
+            <div id="MSwindow" class="container-fluid p-0 m-0 emboss2 inner-shadow canvasView">
                 <div id="MScanvas">
                     <!-- Avocado Div -->
                     <div class="row no-gutters paint avocado">
-                        <div class=" m-2 d-flex flex-fill canvasWindow">
+                        <div class="d-flex flex-fill canvasWindow">
                             <div class="canvas d-flex flex-fill justify-content-center align-items-center">
                                 <img src="/static/img/bg/aesthetic.png" class="paint avocado h-100 stack" />
                                 <span class="paint avocado stack crt w-100 text-center p-2 text-secondary vapor-font">
@@ -90,7 +90,7 @@
                     <!-- Pizza Div -->
                     <div class="paint pizza d-none row no-gutters">
                         <div class="w-100 p-2 bg-white m-2 canvasWindowScroll">
-                            <div>
+                            <div class="w-100">
                                 {% include 'paintDivs/pizza.html'%}
                             </div>
                         </div>
@@ -103,8 +103,10 @@
                     </div>
                     <!-- Sushi Div-->
                     <div class="paint sushi d-none row no-gutters">
-                        <div class="d-flex flex-fill  bg-white d-none m-2 p-2 canvasWindow">
-                            Sushi
+                        <div class="w-100 p-2 bg-white m-2 canvasWindowScroll">
+                            <div class="w-100">
+                                {% include 'paintDivs/sushi.html'%}
+                            </div>
                         </div>
                     </div>
                     <!-- Wine Div -->
@@ -134,7 +136,7 @@
             <!-- Pizza Desc -->
             <span class="paint pizza d-none">
                 I chose to feature projects where I set up a back-end server and interlaced the front-end
-                functionality.<br/> For more projects, click on the 'View' button.
+                functionality.<br /> For more projects, click on the 'View' button.
             </span>
             <!-- Donut Desc -->
             <span class="paint donut d-none">Jelly-Filled Donut</span>

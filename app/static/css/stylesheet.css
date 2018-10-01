@@ -268,9 +268,21 @@ p {
     text-shadow: 1px 2px black;
 }
 
-/* XS to SM */
+/* MS Paint Canvas */
 
-@media (min-width: 0px) and (max-width: 660px) {
+.canvas-title {
+    font-size: 3em;
+}
+
+.canvas-subtitle {
+    font-size: 1.3em;
+}
+
+.canvas-shadow {
+    text-shadow: 3px 3px darkslateblue;
+}
+
+@media (min-width: 0px ) and (max-width: 400px) {
     .title-font {
         font-family: 'Audiowide', cursive;
         font-size: 2.5em;
@@ -284,6 +296,39 @@ p {
         font-family: 'Ubuntu', sans-serif;
     }
 
+    .canvas-title {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .canvas-subtitle {
+        font-size: 0.8em;
+    }
+}
+
+/* XS to SM */
+
+@media (min-width: 400px) and (max-width: 660px) {
+    .title-font {
+        font-family: 'Audiowide', cursive;
+        font-size: 2.5em;
+    }
+
+    .display-font {
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    .hacker {
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    .canvas-title {
+        font-size: 1.9em;
+    }
+
+    .canvas-subtitle {
+        font-size: 1em;
+    }
 }
 
 /* SM to LG */
@@ -298,4 +343,13 @@ p {
         font-family: 'Ubuntu', sans-serif;
         font-size: 1.5em;
     }
+
+    .canvas-title {
+        font-size: 2.5em;
+    }
+
+    .canvas-subtitle {
+        font-size: 1em;
+    }
+
 }
