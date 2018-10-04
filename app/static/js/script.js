@@ -44,4 +44,6 @@ $(document).ready(function () {
 
     $(current_page).addClass('active');
     $("#" + page_cat[1]).addClass('active');
+
+    
 })
