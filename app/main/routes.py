@@ -15,3 +15,21 @@ def aesthetic():
 @bp.route('/projects')
 def projects():
     return render_template('pages/projects.html')
+
+@bp.route('/art/')
+@bp.route('/art')
+def art():
+    return render_template('pages/art.html')
+
+# Error Handlin'
+@bp.app_errorhandler(404)
+def not_found(error):
+    return redirect(url_for('main.aesthetic'))
+
+
+@bp.app_errorhandler(500)
+def internal_error(error):
+    flash("I will code 500 errors And I will code 500 more")
+    flash("Just to be the internal server error")
+    flash("that fried down right at your door. DAH DAH DAH")
+    return redirect(url_for('main.aesthetic'))
